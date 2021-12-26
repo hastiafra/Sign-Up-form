@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link
+  href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+  rel="stylesheet"
+/>
+
+    <title>Sign up Form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+<div><h1>Sign Up Form</h1></div>
+<div>
+  <form action="#">
+    <div>
+
+      <label for="f-name">Full Name:</label>
+      <input type="text" id="f-name" class= "f-name" name="fname" required>
+
+    </div>
+    <div>
+
+      <label for="address">Street Address:</label>
+      <input type="text" id="address" name="address" required>
+
+    </div>
+    
+    <div>
+
+      <label for="text">Email Address:</label>
+      <input type="email" id="e-address" name="e-address" required>
+
+    </div>
+    
+    <div>
+
+      <label for="number">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+    </div>
+    <div>
+
+
+      <label for="password">Password:</label>
+      <input type="password" id="pass" name="pass" class="pass" required onfocus="correction()"
+      >
+
+    </div>
+    <div>
+
+      <label for="password">Confirm Password:</label>
+      <input type="password" class="conPass" id="conPass" name="pass" required onfocus="correction()">
+      
+
+    </div>
+
+    <div class="check">
+      <Label>
+        <input id="terms" type="checkbox" name="term">
+        <label> I agree to the <a href="/">terms of service</a>. </label>
+      </Label>
+
+    </div>
+
+    <div class="error"></div>
+
+    <footer>
+
+<button class="clear">Clear</button>
+<button class="submit" onclick="confirmation(event)">Submit</button>
+
+    </footer>
+  </form>
+</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
